@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .header {
+    background: black;
+    padding: -50px;
+  }
+  
+  #menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color:  black;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  #close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu a,
+  .dropdown-btn {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .menu a:hover,
+  .dropdown-btn:hover {
+    color: #ffddb3;
+  }
+  
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+  
+  .submenu a {
+    font-size: 14px;
+    color: #ffe9d5;
+  }
+  
+  .booking-section {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  
+  .booking-section h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .booking-section a {
+    color: #ffddb3;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .dropdown{
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+    .dropdown a{
+      font-size: 1rem;
+    }
+    .dropdown-footer {
+      font-size: 0.85rem;
+    }
+  }
